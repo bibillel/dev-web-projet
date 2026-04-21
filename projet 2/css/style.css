@@ -16,10 +16,10 @@
 
 
 .main-container {
-    width: 100%;
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    margin: 0 auto;
 }
 
 a {
@@ -117,6 +117,248 @@ a {
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+ 
+
+
+
+/*//////////
+/
+/
+/
+
+///
+/
+//
+/
+/
+//
+//
+/
+/
+
+//
+/
+////////////*/
+
+
+
+
+.search-button .button-icon{
+    display: none;
+ }
+
+article.card{
+    box-shadow: 0px 3px 15px 0px #0000001A;
+}
+
+.hebergement-card a {
+    display: flex;
+    flex: 1 1 calc((100% - 60px) / 3); /* 60px of gap = 2 time 30px between cards*/
+}
+.hebergement-card {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+}
+.hebergement-card .card {
+    display: flex;
+    flex-direction: column;   
+    width: 100%;
+    padding: 5px;
+}
+
+.hebergement-card .card img {
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 15px 15px 0 0;
+}
+header {display: flex;justify-content: space-between;}
+
+header img {
+    height: 19px;
+    width: 61px;
+}
+
+nav ul li a:hover {
+    border-top: 3px solid #0065FC;  /* ← blue border hover */
+    color: #0065FC;
+}
+nav ul li a {
+    text-decoration: none;
+    padding-top: 15px;
+    border-top: 3px solid transparent;  /* ← make sure it has space for border */
+    /*transition: border-color 0.2s;   i learn that transition in this type of link/button can sometime make it look more natural*/ 
+}
+
+ul.navi {
+    display: flex;
+    gap: 68px;
+    list-style: none;
+}
+.search-bar {
+    width: 377px;
+    display: flex;
+    align-items: center;
+    padding-bottom: 35px;
+}
+.search-icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #F2F2F2;
+    width: 50px;
+     border: 1px solid #F2F2F2;
+     border-top-left-radius: 15px;
+     border-bottom-left-radius: 15px;
+     height: 52px;
+     font-size: 18px;
+}
+.search-bar input{
+    display: flex;
+    text-align: center;
+    width: 182px;
+    font-size: 18px;
+    font-weight: 700;
+    border-top: 1px solid #F2F2F2;
+    border-bottom: 1px solid #F2F2F2;
+    border-left:#F2F2F2 ;
+    border-right: none;
+    outline: none;
+    height: 50px;
+}
+.search-bar button{
+    width: 132px;
+    background-color:#0065FC;
+    color: #FFFFFF;
+    border:none;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    outline: none;
+    height: 54px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.list-filtre{
+ display:flex;
+ align-items:center;
+ gap:15px;
+ padding-left:0;  /*padding and margin -> delete the space it has bc its a list> */
+ list-style:none;
+}   
+ .filtre{
+ display:flex;
+ align-items:center;
+ gap:10px;
+ padding:0 20px;
+ height:50px;
+ border-radius:25px;
+ border:2px solid #D9D9D9;
+ font-size:17px;
+ font-weight:700;
+}
+ .filtre:hover{
+    background-color: #DEEBFF;
+ }
+
+ .info-nb{
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 16px;
+    gap:5px;
+}
+
+  .i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;       /* ← circle */
+    width: 24px;             
+    height: 24px;             
+}
+.load-more {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;   
+    display: flex;
+    font-family: inherit;
+    font-size: 18px;
+    padding-top: 30px;;
+}
+
+.act-mars{
+    display: flex;
+    flex-direction: row;
+    gap:30px;
+}
+
+.act-card{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /*cut img that goes past the cards*/
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;   
+
+}
+
+.act-mars a {
+    flex: 1;
+    display: flex;       /* ← permet au <a> de transmettre la hauteur à l'article */
+    min-width: 0;       /* to avoid overflow of the cards ? */
+}
+
+ .act-cards img {
+    width: 100%; 
+    height: 380px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+}
+
+article.act-cards {
+    width: 100%;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    border-radius: 20px;           /* this part i made because img had radius but not the cards themself so with the difference of color it had we could see the 90° corner, maybe i could have write it in another block but it work */
+}
+
+footer {
+    display: flex;
+
+    background-color: #F2F2F2;
+    margin-top: 35px;
+    padding: 0px 20px 20px 20px;
+}
+footer ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+    gap: 15px;
+}
+
+section.act-marseille{
+    padding: 30px;
+    gap: 30px;  
+}
+
+.footer-column {
+    flex: 1;
+}
+
+.act-mars .card-title{
+    padding: 0px 20px;
+}
+
+
+   .hebergement-card a .card .card-content   {
+    margin: 0px 15px;
+} 
+
 
 
 
@@ -128,7 +370,7 @@ a {
 @media (max-width: 1024px) {
     .hebergements-and-populaires {
         flex-direction: column;
-
+        margin-bottom: 40px;
     }
 
     .hebergements {
@@ -159,66 +401,124 @@ a {
     }
 }
 
+
+
+
+/*************************/
+
+
+
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
     /* ... */
-}
-footer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: space-around;
-}
-footer ul {
-    margin: 0px;
-    padding: 0px;
-    list-style: none;
-}
+    main{
+        display: flex;
+        flex-direction: column;
+        /* margin: 30px;  dont work the way i need*/
+        width: 100%;
+    }
+    .main-container {
+        margin:0px;
+        padding: 30px 0px 0px 0px;
+    }
+    body {
+        margin: 0;
+        width: 100%;
+    }
+    .hebergement-card{
+        flex-direction: column;
+    }
+    .hebergement-card a{
+        flex: 1 1 100%;
+    }
+    .act-mars{
+        display: flex;
+        flex-direction: column;
+    }
+    .search-bar{
+        width: 100%;
+    }
+    header {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        gap: 10px;
+    }
+    .headline h2{
+        margin: 0;
+        padding: 0;
+    }
+    .headline p{
+        margin-top: 8px;
+        margin-bottom: 35px;
+    }
+    nav{
+        width: 100%;
+    }
+    nav ul li a{
+        flex-direction: row;
+        font-size: 19px;
+        /* gap: 15px;  pr le gap avec la suite */
+        width: 100%
+    }
+    ul.navi{
+        display: flex;
+        gap: 0;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    ul.navi li{
+        display: flex;
+        flex: 1;
+    }
+    nav ul li a:hover {
+    border-top: none;
+    border-bottom: 3px solid #0065FC;  /* ← blue border hover */
+    color: #0065FC;
 
+    }
+     nav ul li a{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding-top: 15px;
+        padding-bottom: 15px;
+
+    }
+    .search-bar input{
+        width: calc(100% - 40px - 100px);
+
+    }
 
     
+    .search-button .button-text{
+        display: none;
+    }
+    .search-button .button-icon{
+        display: inline;
+        justify-content: center;
+    }
+     .search-bar button {
+        width: 52px;      /* ← juste la taille de l'icône */
+        border-radius: 15px;
+    }
+    .search-bar{
+        width: 100%;
+        padding: 0px 20px;
+        display: flex;
+    }
+    span.headline{
+        padding: 030px 20px 35px 20px;
+    }
 
-/*
-.hebergement-card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    
-}
-.hebergement-card .card {
-  flex: 1 1 calc((100% - 60px) / 3); /* 60px = 2 gaps de 30px entre 3 colonnes /
-  box-sizing: border-box
-}
+    .list-filtre {
+        flex-wrap: wrap;    /* ← permet le retour à la ligne */
+    }
 
-.hebergements img{
-    width: 100%;
-    height: 124px;
-    border: 5px;
-    border-radius: 20px;
-    object-fit: cover
-}
+    .list-filtre li:first-child {
+        width: 100%;        /* ← prend toute la ligne */
+    }
 
-*/
-.hebergement-card a {
-    display: flex;
-    flex: 1 1 calc((100% - 60px) / 3); /* 40px = 2 gaps de 20px pour 3 colonnes */
-    min-width: 0;
 }
-.hebergement-card {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 30px;
-    margin-top: 30px;
-}
-.hebergement-card .card {
-    display: flex;
-    flex-direction: column;   /* ← image en haut, texte en bas */
-    width: 100%;
-    padding: 5px;
-}
-
-.hebergement-card .card img {
-    width: 100%;
-    height: 120px;
-    object-fit: cover;
-    border-radius: 15px 15px 0 0;
-}
+ 
