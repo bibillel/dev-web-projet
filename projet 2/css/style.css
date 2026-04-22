@@ -248,6 +248,10 @@ ul.navi {
  padding-left:0;  /*padding and margin -> delete the space it has bc its a list> */
  list-style:none;
 }   
+.list-filtre .title{
+    font-size: 18px;
+    font-weight: 700;
+}
  .filtre{
  display:flex;
  align-items:center;
@@ -269,6 +273,7 @@ ul.navi {
     font-weight: 400;
     font-size: 16px;
     gap:5px;
+    padding-bottom: 35px;
 }
 
   .i {
@@ -399,6 +404,9 @@ section.act-marseille{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+    .act-mars   .act-cards img{
+        height: 200px;
+    }
 }
 
 
@@ -458,7 +466,7 @@ section.act-marseille{
     nav ul li a{
         flex-direction: row;
         font-size: 19px;
-        /* gap: 15px;  pr le gap avec la suite */
+        /* gap: 15px;  gap for next block */
         width: 100%
     }
     ul.navi{
@@ -500,7 +508,7 @@ section.act-marseille{
         justify-content: center;
     }
      .search-bar button {
-        width: 52px;      /* ← juste la taille de l'icône */
+        width: 52px;      /*/// ← width of icone only ////*/
         border-radius: 15px;
     }
     .search-bar{
@@ -509,16 +517,75 @@ section.act-marseille{
         display: flex;
     }
     span.headline{
-        padding: 030px 20px 35px 20px;
+        padding: 30px 20px 35px 20px;
     }
 
     .list-filtre {
-        flex-wrap: wrap;    /* ← permet le retour à la ligne */
+        flex-wrap: wrap;    /*//// ← linebreak ////*/
+        padding: 0px    20px    35px;
     }
-
+    .list-filtre .filtre{
+        font-size: 14px;
+        width: calc(50% - 60px);
+    }
     .list-filtre li:first-child {
-        width: 100%;        /* ← prend toute la ligne */
+        width: 100%;        /* ← the first li is alone and the other are under it */
+    }
+    .info-nb{
+        padding: 0px    20px;
+    }
+    .hebergements-and-populaires section{
+        border-radius: 0px;
+    }
+    .populaires{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+    }
+    .populaires :first-child{
+        flex: 1;
+    }
+    .populaires-cards{
+        flex-direction: column;
+        width: 100%;
+        padding: 0px 20px;
+    }
+    .populaires-cards a{
+        width: 100%;
+    }
+    .populaires-cards .card{
+        width: 100%;
     }
 
+
+    
+    .populaires{
+        order: -1;
+    }
+    .hebergements-and-populaires .hebergements{
+        background-color: transparent;
+        order: 1;
+    }
+    .act-cards {
+        width: 100%;
+ 
+    }
+    .act-cards img{
+        height: 141px;
+    }
+   footer{
+        display: flex;
+        flex-direction: column  ;
+        gap: 50px;
+    }
+    ul.navi {
+        border-bottom: 2px solid #D9D9D9;  /* ← ligne grise sous toute la nav */
+    }
+
+    ul.navi li:first-child a {
+        border-bottom: 3px solid #0065FC;  /* ← bleu sur Hébergements par défaut */
+        color: #0065FC;
+        margin-bottom: -2px;               /* ← couvre la ligne grise */
+    }
 }
  
