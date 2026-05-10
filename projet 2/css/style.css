@@ -189,7 +189,7 @@ nav ul li a {
     text-decoration: none;
     padding-top: 15px;
     border-top: 3px solid transparent;  /* ← make sure it has space for border */
-    /*transition: border-color 0.2s;   i learn that transition in this type of link/button can sometime make it look more natural*/ 
+    /*transition: border-color 0.3s;   i learn that transition in this type of link/button can sometime make it look more natural*/ 
 }
 
 ul.navi {
