@@ -629,9 +629,8 @@ section.act-marseille {
         font-size: 15px;
     }
  
-    .filtre {
+   .list-filtre li.filtre {
         font-size: 12px;
-    }
  
     .list-filtre .title {
         font-size: 15px;
