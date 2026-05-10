@@ -150,12 +150,6 @@ article.card {
     border-radius: 15px 15px 0 0;
 }
 
-header h1 {
-    margin: 0;
-    padding: 0;
-    line-height: 0;
-}
-
 header {
     display: flex;
     justify-content: space-between;
